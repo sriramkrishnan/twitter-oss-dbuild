@@ -1,0 +1,18 @@
+build.cross-version: standard
+
+build: {
+  sbt-version: "0.13.5"
+  projects: [
+  {
+    name:   algebird
+    system: sbt
+    uri:    "git://github.com/twitter/algebird#develop"
+    check-missing: false
+  }, {
+    name:   scalding
+    system: sbt
+    uri:    "git://github.com/MansurAshraf/scalding#mashraf/fix_scalding_benchmark"
+    check-missing: false
+  }
+ ]
+}
