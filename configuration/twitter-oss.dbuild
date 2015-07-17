@@ -1,18 +1,33 @@
 build.cross-version: standard
 
 build: {
-  sbt-version: "0.13.5"
+  sbt-version: "0.13.8"
   projects: [
+  {
+    name:   bijection
+    system: sbt
+    uri:    "git://github.com/twitter/bijection#develop"
+    check-missing: false
+    extra: {
+      run-tests: false
+    }
+  },
   {
     name:   algebird
     system: sbt
     uri:    "git://github.com/twitter/algebird#develop"
     check-missing: false
+    extra: {
+      run-tests: false
+    }
   }, {
     name:   scalding
     system: sbt
-    uri:    "git://github.com/MansurAshraf/scalding#mashraf/fix_scalding_benchmark"
+    uri:    "git://github.com/twitter/scalding#develop"
     check-missing: false
+    extra: {
+      run-tests: false
+    }
   }
  ]
 }
