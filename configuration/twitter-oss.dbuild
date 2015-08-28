@@ -18,7 +18,8 @@ build: {
     uri:    "git://github.com/twitter/algebird#develop"
     check-missing: false
     extra: {
-      run-tests: false
+      run-tests: false,
+      exclude: [algebird-benchmark]
     }
   }, {
     name:   scalding
