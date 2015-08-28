@@ -29,6 +29,14 @@ build: {
     extra: {
       run-tests: false
     }
+  }, {
+    name:   summingbird
+    system: sbt
+    uri:    "git://github.com/twitter/summingbird#develop"
+    check-missing: false
+    extra: {
+      run-tests: false
+    }
   }
  ]
 }
