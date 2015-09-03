@@ -7,4 +7,4 @@ export JVM_OPTS="-XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -XX:Reser
 BASEDIR=$(dirname $(dirname $0))
 DBUILD_CONF="$BASEDIR/configuration/twitter-oss.dbuild"
 
-$BASEDIR/bin/dbuild -d $DBUILD_CONF 2>&1
+$BASEDIR/bin/dbuild $DBUILD_CONF 2>&1
