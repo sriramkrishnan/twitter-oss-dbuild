@@ -20,7 +20,7 @@ build: {
     extra: {
       run-tests: false
     }
-  }, , {
+  }, {
     name:   chill
     system: sbt
     uri:    "git://github.com/twitter/chill#develop"
