@@ -4,15 +4,6 @@ build: {
   sbt-version: "0.13.8"
   projects: [
   {
-    name:   bijection
-    system: sbt
-    uri:    "git://github.com/twitter/bijection#develop"
-    check-missing: false
-    extra: {
-      run-tests: false
-    }
-  },
-  {
     name:   algebird
     system: sbt
     uri:    "git://github.com/twitter/algebird#develop"
@@ -20,6 +11,22 @@ build: {
     extra: {
       run-tests: false,
       exclude: [algebird-benchmark]
+    }
+  }, {
+    name:   bijection
+    system: sbt
+    uri:    "git://github.com/twitter/bijection#develop"
+    check-missing: false
+    extra: {
+      run-tests: false
+    }
+  }, {
+    name:   chill
+    system: sbt
+    uri:    "git://github.com/twitter/chill#develop"
+    check-missing: false
+    extra: {
+      run-tests: false
     }
   }, {
     name:   scalding
@@ -33,6 +40,14 @@ build: {
     name:   summingbird
     system: sbt
     uri:    "git://github.com/twitter/summingbird#develop"
+    check-missing: false
+    extra: {
+      run-tests: false
+    }
+  }, {
+    name:   tormenta
+    system: sbt
+    uri:    "git://github.com/twitter/tormenta#develop"
     check-missing: false
     extra: {
       run-tests: false
