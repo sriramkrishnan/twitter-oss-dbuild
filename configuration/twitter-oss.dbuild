@@ -15,7 +15,15 @@ build: {
   }, {
     name:   bijection
     system: sbt
-    uri:    "git://github.com/twitter/bijection#develop"
+    uri:    "git://github.com/sriramkrishnan/bijection#develop"
+    check-missing: false
+    extra: {
+      run-tests: false
+    }
+  }, , {
+    name:   chill
+    system: sbt
+    uri:    "git://github.com/twitter/chill#develop"
     check-missing: false
     extra: {
       run-tests: false
