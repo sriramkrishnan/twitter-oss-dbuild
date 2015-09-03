@@ -18,6 +18,15 @@ build: {
     uri:    "git://github.com/twitter/bijection#develop"
     check-missing: false
     extra: {
+      run-tests: false,
+      exclude: [bijection-macros]
+    }
+  }, {
+    name:   chill
+    system: sbt
+    uri:    "git://github.com/twitter/chill#develop"
+    check-missing: false
+    extra: {
       run-tests: false
     }
   }, {
