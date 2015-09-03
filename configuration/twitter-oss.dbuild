@@ -21,14 +21,6 @@ build: {
       run-tests: false
     }
   }, {
-    name:   chill
-    system: sbt
-    uri:    "git://github.com/twitter/chill#develop"
-    check-missing: false
-    extra: {
-      run-tests: false
-    }
-  }, {
     name:   scalding
     system: sbt
     uri:    "git://github.com/twitter/scalding#develop"
