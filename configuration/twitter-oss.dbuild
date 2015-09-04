@@ -34,7 +34,8 @@ build: {
     uri:    "git://github.com/twitter/storehaus#develop"
     check-missing: false
     extra: {
-      run-tests: false
+      run-tests: false,
+      exclude: [storehaus-hbase]
     }
   }, {
     name:   summingbird
