@@ -35,7 +35,7 @@ build: {
     check-missing: false
     extra: {
       run-tests: false,
-      exclude: [storehaus-hbase]
+      exclude: [storehaus-hbase, storehaus-caliper]
     }
   }, {
     name:   summingbird
