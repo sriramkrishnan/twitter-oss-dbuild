@@ -9,14 +9,14 @@ build: {
     uri:    "git://github.com/twitter/chill#develop"
     check-missing: false
     extra: {
-      run-tests: false,
-      exclude: [chill-java]
+      run-tests: false
     }
   }, {
     name:   tormenta
     system: sbt
     uri:    "git://github.com/twitter/tormenta#develop"
     check-missing: false
+    deps.ignore: "com.twitter:chill-java"
     extra: {
       run-tests: false
     }
