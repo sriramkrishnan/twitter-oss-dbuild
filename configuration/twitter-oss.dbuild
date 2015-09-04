@@ -16,7 +16,7 @@ build: {
     system: sbt
     uri:    "git://github.com/twitter/tormenta#develop"
     check-missing: false
-    deps.ignore: "com.twitter:chill-java"
+    deps.ignore: "com.twitter#chill-java"
     extra: {
       run-tests: false
     }
