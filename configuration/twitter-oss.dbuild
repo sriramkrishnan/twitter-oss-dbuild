@@ -9,7 +9,8 @@ build: {
     uri:    "git://github.com/twitter/chill#develop"
     check-missing: false
     extra: {
-      run-tests: false
+      run-tests: false,
+      exclude: [chill-java]
     }
   }, {
     name:   tormenta
