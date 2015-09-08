@@ -6,7 +6,7 @@ build: {
   {
     name:   chill
     system: sbt
-    uri:    "git://github.com/skrishnan/chill#java_cross_publish"
+    uri:    "git://github.com/sriramkrishnan/chill#java_cross_publish"
     check-missing: false
     extra: {
       run-tests: false
