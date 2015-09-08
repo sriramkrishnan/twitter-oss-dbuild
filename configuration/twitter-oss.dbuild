@@ -4,43 +4,9 @@ build: {
   sbt-version: "0.13.8"
   projects: [
   {
-    name:   algebird
+    name:   chill
     system: sbt
-    uri:    "git://github.com/twitter/algebird#develop"
-    check-missing: false
-    extra: {
-      run-tests: false,
-      exclude: [algebird-benchmark]
-    }
-  }, {
-    name:   bijection
-    system: sbt
-    uri:    "git://github.com/twitter/bijection#develop"
-    check-missing: false
-    extra: {
-      run-tests: false
-    }
-  }, {
-    name:   scalding
-    system: sbt
-    uri:    "git://github.com/twitter/scalding#develop"
-    check-missing: false
-    extra: {
-      run-tests: false
-    }
-  }, {
-    name:   storehaus
-    system: sbt
-    uri:    "git://github.com/twitter/storehaus#develop"
-    check-missing: false
-    extra: {
-      run-tests: false,
-      exclude: [storehaus-hbase, storehaus-caliper]
-    }
-  }, {
-    name:   summingbird
-    system: sbt
-    uri:    "git://github.com/twitter/summingbird#develop"
+    uri:    "git://github.com/sriramkrishnan/chill#java_cross_publish"
     check-missing: false
     extra: {
       run-tests: false
@@ -50,6 +16,7 @@ build: {
     system: sbt
     uri:    "git://github.com/twitter/tormenta#develop"
     check-missing: false
+    deps.ignore: "com.twitter#chill-java"
     extra: {
       run-tests: false
     }
