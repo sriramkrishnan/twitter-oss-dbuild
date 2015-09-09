@@ -5,8 +5,7 @@ build: {
   {
     name:   chill
     system: sbt
-    uri:    "git://github.com/twitter/chill#develop"
-    set-version: "2.11"
+    uri:    "git://github.com/sriramkrishnan/chill#develop"
     extra: {
       run-tests: false
     }
@@ -14,7 +13,6 @@ build: {
     name:   tormenta
     system: sbt
     uri:    "git://github.com/twitter/tormenta#develop"
-    set-version: "2.11"
     extra: {
       run-tests: false
     }
