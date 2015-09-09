@@ -20,7 +20,7 @@ build: {
   }, {
     name:   chill
     system: sbt
-    uri:    "git://github.com/sriramkrishnan/chill#develop"
+    uri:    "git://github.com/twitter/chill#develop"
     extra: {
       run-tests: false
     }
