@@ -1,13 +1,12 @@
-build.cross-version: standard
-
 build: {
   sbt-version: "0.13.8"
+  cross-version: standard
   projects: [
   {
     name:   chill
     system: sbt
-    uri:    "git://github.com/sriramkrishnan/chill#java_cross_publish"
-    check-missing: false
+    uri:    "git://github.com/twitter/chill#develop"
+    set-version: "2.11"
     extra: {
       run-tests: false
     }
@@ -15,8 +14,7 @@ build: {
     name:   tormenta
     system: sbt
     uri:    "git://github.com/twitter/tormenta#develop"
-    check-missing: false
-    deps.ignore: "com.twitter#chill-java"
+    set-version: "2.11"
     extra: {
       run-tests: false
     }
