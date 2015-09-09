@@ -31,7 +31,7 @@ build: {
     uri:    "git://github.com/twitter/scalding#develop"
     extra: {
       run-tests: false,
-      exclude: [scalding-avro, scalding-benchmark, scalding-hadoop-test]
+      exclude: [scalding-avro, scalding-benchmarks, scalding-hadoop-test]
     }
   }, {
     name:   storehaus
