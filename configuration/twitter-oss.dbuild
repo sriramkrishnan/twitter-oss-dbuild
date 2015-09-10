@@ -16,14 +16,15 @@ build: {
     uri:    "git://github.com/twitter/bijection#develop"
     extra: {
       run-tests: false,
-      exclude: [bijection-clojure]
+      exclude: [bijection-avro, bijection-clojure, bijection-jodatime, bijection-json4s]
     }
   }, {
     name:   chill
     system: sbt
     uri:    "git://github.com/twitter/chill#develop"
     extra: {
-      run-tests: false
+      run-tests: false,
+      exclude: [chill-avro]
     }
   }, {
     name:   scalding
