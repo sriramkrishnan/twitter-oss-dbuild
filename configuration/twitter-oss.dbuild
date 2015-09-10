@@ -47,7 +47,7 @@ build: {
     uri:    "git://github.com/twitter/summingbird#develop"
     extra: {
       run-tests: false,
-      exclude: [summingbird-example, summingbird-core-test]
+      exclude: [summingbird-example]
     }
   }, {
     name:   tormenta
