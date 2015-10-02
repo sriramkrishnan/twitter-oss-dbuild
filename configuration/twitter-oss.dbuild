@@ -16,7 +16,7 @@ build: {
     uri:    "git://github.com/twitter/bijection#develop"
     extra: {
       run-tests: false,
-      exclude: [bijection-avro, bijection-clojure, bijection-jodatime, bijection-json4s]
+      exclude: [bijection-avro, bijection-clojure, bijection-guava, bijection-jodatime, bijection-json4s, bijection-protobuf]
     }
   }, {
     name:   chill
@@ -24,7 +24,7 @@ build: {
     uri:    "git://github.com/twitter/chill#develop"
     extra: {
       run-tests: false,
-      exclude: [chill-avro]
+      exclude: [chill-akka, chill-all, chill-avro]
     }
   }, {
     name:   scalding
